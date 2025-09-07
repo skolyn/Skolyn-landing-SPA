@@ -186,8 +186,11 @@ const PlatformSection = () => {
               </CardContent>
             </Card>
 
-            {/* Demo Video Placeholder */}
-            <Card className="bg-[#030f4f] text-white">
+   
+          </div>
+        </div>
+<div>
+     <Card className="bg-[#030f4f] text-white">
               <CardContent className="p-8 text-center">
                 <Play className="h-16 w-16 mx-auto mb-4 text-[#00A99D]" />
                 <h4 className="text-xl font-bold mb-2">Watch Platform Demo</h4>
@@ -199,9 +202,7 @@ const PlatformSection = () => {
                 </Button>
               </CardContent>
             </Card>
-          </div>
-        </div>
-
+</div>
         {/* Performance Metrics */}
         <div className="bg-white rounded-2xl p-12">
           <h3 className="text-3xl font-bold text-[#030f4f] text-center mb-12">

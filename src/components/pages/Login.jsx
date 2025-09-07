@@ -93,7 +93,7 @@ const Login = ({ onBack }) => {
               </p>
               <Button 
                 className="w-full bg-[#00A99D] hover:bg-[#00A99D]/90"
-                onClick={() => window.location.href = 'mailto:leads@skolyn.se?subject=Early Access Interest'}
+                onClick={() => window.location.href = 'mailto:demo@skolyn.se?subject=Early Access Interest'}
               >
                 <Users className="h-4 w-4 mr-2" />
                 Request Early Access
@@ -104,8 +104,8 @@ const Login = ({ onBack }) => {
             <div className="text-center pt-4 border-t border-gray-200">
               <p className="text-xs text-gray-500">
                 For enterprise inquiries: 
-                <a href="mailto:leads@skolyn.se" className="text-[#00A99D] hover:underline ml-1">
-                  leads@skolyn.se
+                <a href="mailto:demo@skolyn.se" className="text-[#00A99D] hover:underline ml-1">
+                  demo@skolyn.se
                 </a>
               </p>
             </div>

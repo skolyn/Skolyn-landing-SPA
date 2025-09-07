@@ -253,10 +253,9 @@ const GDPRCompliance = ({ onBack }) => {
               <p className="text-gray-700">
                 <strong>Data Protection Officer</strong><br />
                 Skolyn LLC<br />
-                Z.Nudirəliyev küç. 79, Nərimanov rayonu<br />
-                Bakı, Azərbaycan, AZ1078<br />
+                79 Z. Nudiraliyev St., Baku, Azerbaijan, AZ1078<br />
                 Email: dpo@skolyn.se<br />
-                Phone: +994 12 555 0123
+                Phone: +994 51 539 6228
               </p>
             </div>
           </CardContent>

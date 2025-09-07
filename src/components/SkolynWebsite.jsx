@@ -427,16 +427,24 @@ const SkolynWebsite = ({ onNavigate }) => {
               <div className="space-y-2">
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-4 w-4 text-[#00A99D] mt-1 flex-shrink-0" />
-                  <span className="text-gray-300 text-sm">Z.Nudirəliyev küç. 79, Nərimanov rayonu, Bakı, Azərbaycan, AZ1078</span>
+                  <span className="text-gray-300 text-sm">79 Z. Nudiraliyev St., Baku, Azerbaijan, AZ1078</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-4 w-4 text-[#00A99D]" />
-                  <span className="text-gray-300 text-sm">leads@skolyn.se</span>
+                  <a href="mailto:contact@skolyn.se" className="text-[#00A99D] hover:underline ml-1 text-gray-300 text-sm">
+                  contact@skolyn.se
+                </a>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Phone className="h-4 w-4 text-[#00A99D]" />
-                  <span className="text-gray-300 text-sm">+994 12 555 0123</span>
-                </div>
+               <div className="flex items-center space-x-3">
+              <Phone className="h-4 w-4 text-[#00A99D]" />
+              <a 
+                href="tel:+994515396228" 
+                className="text-gray-300 text-sm hover:underline"
+              >
+                +994 51 539 6228
+              </a>
+            </div>
+
               </div>
             </div>
 

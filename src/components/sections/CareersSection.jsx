@@ -234,22 +234,22 @@ const CareersSection = () => {
 
   const teamTestimonials = [
     {
-      name: 'Elena Petrov',
-      role: 'Senior ML Engineer',
+      name: 'Rajab Iskandarli',
+      role: 'Lead AI Engineer',
       testimonial: 'Working at Skolyn feels like being at the forefront of a revolution. Every day, I know my work is directly improving patient outcomes.',
-      joinedYear: '2023'
+      joinedYear: '2025'
     },
     {
-      name: 'Ahmad Hassan',
+      name: 'Habib Mammadov',
       role: 'Backend Engineer',
       testimonial: 'The technical challenges are incredibly rewarding, and the team culture is collaborative and supportive. Plus, the mission is deeply meaningful.',
-      joinedYear: '2023'
+      joinedYear: '2025'
     },
     {
-      name: 'Dr. Leyla Aliyeva',
+      name: 'Dr. Nurgul Abbasova',
       role: 'Clinical Specialist',
       testimonial: 'As a practicing radiologist, I love how Skolyn truly understands clinical workflows. We\'re building tools that clinicians actually want to use.',
-      joinedYear: '2024'
+      joinedYear: '2025'
     }
   ];
 
@@ -417,10 +417,19 @@ const CareersSection = () => {
             We're always looking for exceptional talent. Send us your resume and 
             tell us how you'd like to contribute to the future of medical AI.
           </p>
-          <Button className="bg-[#00A99D] hover:bg-[#00A99D]/90">
-            <Mail className="h-4 w-4 mr-2" />
-            Send General Application
-          </Button>
+         <Button
+  asChild
+  className="bg-[#00A99D] hover:bg-[#00A99D]/90"
+>
+  <a
+    href="mailto:careers@skolyn.se"
+    aria-label="Send General Application"
+  >
+    <Mail className="h-4 w-4 mr-2" />
+    Send General Application
+  </a>
+</Button>
+
         </div>
       </div>
     </section>
@@ -428,3 +437,4 @@ const CareersSection = () => {
 };
 
 export default CareersSection;
+

@@ -108,18 +108,18 @@ ${formData.firstName} ${formData.lastName}`;
   ];
 
   const contactInfo = {
-    email: 'leads@skolyn.se',
-    phone: '+994 12 555 0123',
-    address: 'INNOland Incubation Center, Baku, Azerbaijan',
+    email: 'contact@skolyn.se',
+    phone: '+994 51 539 6228',
+    address: '79 Z. Nudiraliyev St., Baku, Azerbaijan, AZ1078',
     businessHours: 'Monday - Friday, 9:00 AM - 6:00 PM (AZT)'
   };
 
   const socialLinks = [
-    { platform: 'LinkedIn', icon: <Linkedin className="h-5 w-5" />, url: '#' },
-    { platform: 'Twitter', icon: <Twitter className="h-5 w-5" />, url: '#' },
-    { platform: 'Website', icon: <Globe className="h-5 w-5" />, url: '#' }
+    { platform: 'LinkedIn', icon: <Linkedin className="h-5 w-5" />, url: 'https://linkedin.com/company/skolyn' },
+    { platform: 'Twitter', icon: <Twitter className="h-5 w-5" />, url: 'https://twitter.com/skolyn' },
+    { platform: 'Website', icon: <Globe className="h-5 w-5" />, url: 'https://skolyn.se' }
   ];
-
+  
   if (isSubmitted) {
     return (
       <section id="demo" className="py-24 bg-[#030f4f] text-white">
