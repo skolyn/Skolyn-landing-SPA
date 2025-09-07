@@ -208,7 +208,7 @@ const SkolynWebsite = ({ onNavigate }) => {
           <div className="mb-8">
             <div className="flex items-center justify-center mx-auto mb-6">
               <img 
-                src="/logos/logo-white.svg"
+                src="/logos/logo-white2.svg"
                 alt="Skolyn Logo"
                 className="w-82 h-34 object-contain"
               />
@@ -354,7 +354,7 @@ const SkolynWebsite = ({ onNavigate }) => {
                   <img 
                     src="/logos/logo-white.svg"
                     alt="Skolyn Logo"
-                    className="h-8 w-auto"
+                    className="h-18 w-auto"
                   />
                 </div>
               </div>
