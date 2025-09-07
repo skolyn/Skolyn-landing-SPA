@@ -77,39 +77,39 @@ const CompanySection = () => {
     }
   ];
 
-  const milestones = [
+ const milestones = [
     {
-      year: '2023',
-      quarter: 'Q1',
+      year: '2025',
+      quarter: 'Q3',
       title: 'Company Founded',
       description: 'Skolyn founded by AI researchers and clinical experts'
     },
     {
-      year: '2023',
-      quarter: 'Q2',
+     year: '2025',
+      quarter: 'Q3',
+      title: 'Innoland Partnership',
+      description: 'Accepted into Azerbaijan\'s premier startup incubator'
+    },
+    {
+    year: '2025',
+      quarter: 'Q4',
       title: 'Pre-Seed Funding',
       description: 'Secured initial funding from strategic healthcare investors'
     },
     {
-      year: '2023',
-      quarter: 'Q3',
-      title: 'INNOland Partnership',
-      description: 'Accepted into Azerbaijan\'s premier startup incubator'
-    },
-    {
-      year: '2023',
+      year: '2025',
       quarter: 'Q4',
       title: 'First AI Models',
       description: 'Deployed initial breast imaging AI models for clinical validation'
     },
     {
-      year: '2024',
+      year: '2026',
       quarter: 'Q1',
       title: 'Clinical Partnerships',
       description: 'Established partnerships with leading medical institutions'
     },
     {
-      year: '2024',
+      year: '2026',
       quarter: 'Q2',
       title: 'Platform Launch',
       description: 'Beta launch of comprehensive clinical intelligence platform'

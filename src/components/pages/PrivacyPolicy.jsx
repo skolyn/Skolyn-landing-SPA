@@ -200,10 +200,9 @@ const PrivacyPolicy = ({ onBack }) => {
               <div className="bg-gray-50 p-4 rounded-lg">
                 <p className="text-gray-700">
                   <strong>Skolyn LLC</strong><br />
-                  Z.Nudirəliyev küç. 79, Nərimanov rayonu<br />
-                  Bakı, Azərbaycan, AZ1078<br />
+                  79 Z. Nudiraliyev St., Baku, Azerbaijan, AZ1078<br />
                   Email: privacy@skolyn.se<br />
-                  Phone: +994 12 555 0123
+                  Phone: +994 51 539 6228
                 </p>
               </div>
             </CardContent>
