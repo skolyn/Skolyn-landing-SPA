@@ -91,38 +91,12 @@ const SkolynWebsite = ({ onNavigate }) => {
             {/* Official Skolyn Logo */}
             <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('hero')}>
               <div className="flex items-center space-x-3">
-                {/* Circular Logo */}
-                <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-200 ${
-                  isScrolled ? 'bg-white' : 'bg-white/10 backdrop-blur-sm'
-                }`}>
-                  <div className="w-8 h-8 flex items-center justify-center">
-                    <svg viewBox="0 0 100 100" className="w-6 h-6">
-                      <defs>
-                        <pattern id="swirl" patternUnits="userSpaceOnUse" width="100" height="100">
-                          <path 
-                            d="M50,10 Q80,30 70,50 Q60,70 50,50 Q40,30 50,10" 
-                            fill="none" 
-                            stroke={isScrolled ? "#030f4f" : "white"} 
-                            strokeWidth="8"
-                          />
-                          <path 
-                            d="M50,90 Q20,70 30,50 Q40,30 50,50 Q60,70 50,90" 
-                            fill="none" 
-                            stroke={isScrolled ? "#030f4f" : "white"} 
-                            strokeWidth="8"
-                          />
-                        </pattern>
-                      </defs>
-                      <circle cx="50" cy="50" r="45" fill="url(#swirl)" />
-                    </svg>
-                  </div>
-                </div>
-                {/* Skolyn Text */}
-                <span className={`text-xl font-bold transition-colors duration-200 ${
-                  isScrolled ? 'text-[#030f4f]' : 'text-white'
-                }`}>
-                  Skolyn
-                </span>
+                {/* Skolyn Logo */}
+                <img 
+                  src={isScrolled ? "/logos/logo-black.svg" : "/logos/logo-white.svg"}
+                  alt="Skolyn Logo"
+                  className="h-8 w-auto transition-opacity duration-200"
+                />
               </div>
             </div>
 
@@ -232,47 +206,16 @@ const SkolynWebsite = ({ onNavigate }) => {
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl">
           {/* Main Logo */}
           <div className="mb-8">
-            <div className="w-24 h-24 bg-white rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-2xl">
-              <div className="flex items-center justify-center">
-                <svg viewBox="0 0 100 100" className="w-16 h-16">
-                  <defs>
-                    <pattern id="swirl-hero" patternUnits="userSpaceOnUse" width="100" height="100">
-                      <path 
-                        d="M50,15 Q75,25 65,50 Q55,75 50,50 Q45,25 50,15" 
-                        fill="none" 
-                        stroke="#030f4f" 
-                        strokeWidth="6"
-                      />
-                      <path 
-                        d="M50,85 Q25,75 35,50 Q45,25 50,50 Q55,75 50,85" 
-                        fill="none" 
-                        stroke="#030f4f" 
-                        strokeWidth="6"
-                      />
-                      <path 
-                        d="M15,50 Q25,25 50,35 Q75,45 50,50 Q25,55 15,50" 
-                        fill="none" 
-                        stroke="#00A99D" 
-                        strokeWidth="4"
-                      />
-                      <path 
-                        d="M85,50 Q75,75 50,65 Q25,55 50,50 Q75,45 85,50" 
-                        fill="none" 
-                        stroke="#00A99D" 
-                        strokeWidth="4"
-                      />
-                    </pattern>
-                  </defs>
-                  <circle cx="50" cy="50" r="40" fill="url(#swirl-hero)" />
-                </svg>
-              </div>
+            <div className="flex items-center justify-center mx-auto mb-6">
+              <img 
+                src="/logos/logo-white.svg"
+                alt="Skolyn Logo"
+                className="w-82 h-34 object-contain"
+              />
             </div>
-            <p className="text-[#00A99D] font-semibold text-lg tracking-wide">
-              Early. Accurate. Trusted.
-            </p>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-5xl md:text-5xl font-bold text-white mb-6 leading-tight">
             Clarity in <span className="text-[#00A99D] font-extrabold">Complexity</span>.
           </h1>
           
@@ -319,53 +262,71 @@ const SkolynWebsite = ({ onNavigate }) => {
             <div className="flex animate-scroll space-x-16 items-center">
               {/* First set of partners */}
               {[
-                { name: 'INNOland', color: '#0066CC', url: 'https://innoland.az' },
-                { name: 'KOBİA', color: '#FF4444', url: '#' },
-                { name: 'Google for Startups', color: '#4285F4', url: 'https://startup.google.com' },
-                { name: 'Pasha Bank', color: '#00A651', url: 'https://pashabank.az' }
+                { name: 'Azərbaycan Respublikası Səhiyyə Nazirliyi', logo: 'Logo_of_the_Ministry_of_Healthcare_of_Azerbaijan.png', url: '#' },
+                { name: 'Azərbaycan Respublikası Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi', logo: 'Logo_of_Ministry_of_Digital_Development_and_Transportation_of_Azerbaijan.svg', url: '#' },
+                { name: 'Azərbaycan Respublikası Elm və Təhsil Nazirliyi', logo: 'Ministry_of_Science_and_Education_of_the_Republic_of_Azerbaijan.svg', url: '#' },
+                { name: 'Tibbi Ərazi Bölmələrini İdarəetmə Birliyi (TƏBİB)', logo: 'TƏBİB_logo_PNG.png', url: '#' },
+                { name: 'İnnovasiya və Rəqəmsal İnkişaf Agentliyi', logo: 'innovasiya-ve-reqemsal-inkisaf-agentliyi-0.png', url: '#' },
+                { name: 'Azərbaycan Respublikasının Kiçik və Orta Biznesin İnkişafı Agentliyi (KOBİA)', logo: 'kobia.svg', url: '#' },
+                { name: 'Azərbaycan Respublikası Əqli Mülkiyyət Agentliyi', logo: 'copat.svg', url: '#' },
+                { name: 'İqtisadi İslahatların Təhlili və Kommunikasiya Mərkəzi', logo: 'iitkm_logo_az.png', url: '#' },
+                { name: 'Milli Onkologiya Mərkəzi', logo: 'millOncology.jpg', url: '#' },
+                { name: 'Azərbaycan Tibb Universiteti', logo: 'Emblem_of_the_Azerbaijan_Medical_University.jpg', url: '#' },
+                { name: 'Azərbaycan Tibb Universiteti Tədris Cərrahiyyə Klinikası', logo: 'az-tibb-uni-tedris-cerrahiyye.png', url: '#' },
+                { name: 'Azərbaycan Respublikası Elm və Təhsil Nazirliyinin Yüksək Texnologiyalar Parkı (YTP)', logo: 'ytp.webp', url: '#' },
+                { name: 'INNOLAND Inkubasiya və Akselerasiya Mərkəzi', logo: 'innoland.svg', url: 'https://innoland.az' },
+                { name: 'Azerbaijan Artificial Intelligence Lab', logo: 'aai.svg', url: '#' },
+                { name: 'Google for Startups', logo: 'Google_for_Startups_logo.svg', url: 'https://startup.google.com' },
+                { name: 'German Research Center for Artificial Intelligence', logo: 'dfki_Logo_digital_black.png', url: '#' }
               ].map((partner, index) => (
                 <a
                   key={`first-${index}`}
                   href={partner.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-shrink-0 flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-500 hover:scale-105"
+                  title={partner.name}
+                  className="flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500 hover:scale-105 cursor-pointer"
                 >
-                  <div 
-                    className="w-16 h-16 rounded-xl flex items-center justify-center shadow-lg"
-                    style={{ backgroundColor: partner.color }}
-                  >
-                    <span className="text-white font-bold text-lg">
-                      {partner.name === 'Google for Startups' ? 'G' : partner.name.slice(0, 2)}
-                    </span>
-                  </div>
-                  <span className="font-semibold text-gray-700 whitespace-nowrap">{partner.name}</span>
+                  <img
+                    src={`/logos/${partner.logo}`}
+                    alt={partner.name}
+                    className="w-28 h-28 object-contain rounded-lg shadow-lg bg-white p-4"
+                  />
                 </a>
               ))}
               
               {/* Duplicate set for seamless loop */}
               {[
-                { name: 'INNOland', color: '#0066CC', url: 'https://innoland.az' },
-                { name: 'KOBİA', color: '#FF4444', url: '#' },
-                { name: 'Google for Startups', color: '#4285F4', url: 'https://startup.google.com' },
-                { name: 'Pasha Bank', color: '#00A651', url: 'https://pashabank.az' }
+                { name: 'Azərbaycan Respublikası Səhiyyə Nazirliyi', logo: 'Logo_of_the_Ministry_of_Healthcare_of_Azerbaijan.png', url: '#' },
+                { name: 'Azərbaycan Respublikası Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi', logo: 'Logo_of_Ministry_of_Digital_Development_and_Transportation_of_Azerbaijan.svg', url: '#' },
+                { name: 'Azərbaycan Respublikası Elm və Təhsil Nazirliyi', logo: 'Ministry_of_Science_and_Education_of_the_Republic_of_Azerbaijan.svg', url: '#' },
+                { name: 'Tibbi Ərazi Bölmələrini İdarəetmə Birliyi (TƏBİB)', logo: 'TƏBİB_logo_PNG.png', url: '#' },
+                { name: 'İnnovasiya və Rəqəmsal İnkişaf Agentliyi', logo: 'innovasiya-ve-reqemsal-inkisaf-agentliyi-0.png', url: '#' },
+                { name: 'Azərbaycan Respublikasının Kiçik və Orta Biznesin İnkişafı Agentliyi (KOBİA)', logo: 'kobia.svg', url: '#' },
+                { name: 'Azərbaycan Respublikası Əqli Mülkiyyət Agentliyi', logo: 'copat.svg', url: '#' },
+                { name: 'İqtisadi İslahatların Təhlili və Kommunikasiya Mərkəzi', logo: 'iitkm_logo_az.png', url: '#' },
+                { name: 'Milli Onkologiya Mərkəzi', logo: 'millOncology.jpg', url: '#' },
+                { name: 'Azərbaycan Tibb Universiteti', logo: 'Emblem_of_the_Azerbaijan_Medical_University.jpg', url: '#' },
+                { name: 'Azərbaycan Tibb Universiteti Tədris Cərrahiyyə Klinikası', logo: 'az-tibb-uni-tedris-cerrahiyye.png', url: '#' },
+                { name: 'Azərbaycan Respublikası Elm və Təhsil Nazirliyinin Yüksək Texnologiyalar Parkı (YTP)', logo: 'ytp.webp', url: '#' },
+                { name: 'INNOLAND Inkubasiya və Akselerasiya Mərkəzi', logo: 'innoland.svg', url: 'https://innoland.az' },
+                { name: 'Azerbaijan Artificial Intelligence Lab', logo: 'aai.svg', url: '#' },
+                { name: 'Google for Startups', logo: 'Google_for_Startups_logo.svg', url: 'https://startup.google.com' },
+                { name: 'German Research Center for Artificial Intelligence', logo: 'dfki_Logo_digital_black.png', url: '#' }
               ].map((partner, index) => (
                 <a
                   key={`second-${index}`}
                   href={partner.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-shrink-0 flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-500 hover:scale-105"
+                  title={partner.name}
+                  className="flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500 hover:scale-105 cursor-pointer"
                 >
-                  <div 
-                    className="w-16 h-16 rounded-xl flex items-center justify-center shadow-lg"
-                    style={{ backgroundColor: partner.color }}
-                  >
-                    <span className="text-white font-bold text-lg">
-                      {partner.name === 'Google for Startups' ? 'G' : partner.name.slice(0, 2)}
-                    </span>
-                  </div>
-                  <span className="font-semibold text-gray-700 whitespace-nowrap">{partner.name}</span>
+                  <img
+                    src={`/logos/${partner.logo}`}
+                    alt={partner.name}
+                    className="w-28 h-28 object-contain rounded-lg shadow-lg bg-white p-4"
+                  />
                 </a>
               ))}
             </div>
@@ -391,32 +352,12 @@ const SkolynWebsite = ({ onNavigate }) => {
               {/* Official Skolyn Logo */}
               <div className="mb-6">
                 <div className="flex items-center space-x-3">
-                  {/* Circular Logo */}
-                  <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center">
-                    <div className="w-8 h-8 flex items-center justify-center">
-                      <svg viewBox="0 0 100 100" className="w-6 h-6">
-                        <defs>
-                          <pattern id="swirl-footer" patternUnits="userSpaceOnUse" width="100" height="100">
-                            <path 
-                              d="M50,10 Q80,30 70,50 Q60,70 50,50 Q40,30 50,10" 
-                              fill="none" 
-                              stroke="#030f4f" 
-                              strokeWidth="8"
-                            />
-                            <path 
-                              d="M50,90 Q20,70 30,50 Q40,30 50,50 Q60,70 50,90" 
-                              fill="none" 
-                              stroke="#030f4f" 
-                              strokeWidth="8"
-                            />
-                          </pattern>
-                        </defs>
-                        <circle cx="50" cy="50" r="45" fill="url(#swirl-footer)" />
-                      </svg>
-                    </div>
-                  </div>
-                  {/* Skolyn Text */}
-                  <span className="text-2xl font-bold text-white">Skolyn</span>
+                  {/* Skolyn Logo - White version for dark footer background */}
+                  <img 
+                    src="/logos/logo-white.svg"
+                    alt="Skolyn Logo"
+                    className="h-8 w-auto"
+                  />
                 </div>
               </div>
               <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
