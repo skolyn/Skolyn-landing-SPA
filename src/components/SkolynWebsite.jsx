@@ -254,7 +254,7 @@ const SkolynWebsite = ({ onNavigate }) => {
       <section className="py-12 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-center text-gray-600 mb-8 text-lg">
-            A Registered National Technology Startup, Proudly Incubated at INNOland and Backed by a World-Class Ecosystem of Strategic Partners
+            A Registered National Technology Startup, Proudly Incubated at Innoland and Backed by a World-Class Ecosystem of Strategic Partners
           </p>
           
           {/* Infinite Scrolling Carousel */}
@@ -262,22 +262,21 @@ const SkolynWebsite = ({ onNavigate }) => {
             <div className="flex animate-scroll space-x-16 items-center">
               {/* First set of partners */}
               {[
-                { name: 'Azərbaycan Respublikası Səhiyyə Nazirliyi', logo: 'Logo_of_the_Ministry_of_Healthcare_of_Azerbaijan.png', url: '#' },
-                { name: 'Azərbaycan Respublikası Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi', logo: 'Logo_of_Ministry_of_Digital_Development_and_Transportation_of_Azerbaijan.svg', url: '#' },
-                { name: 'Azərbaycan Respublikası Elm və Təhsil Nazirliyi', logo: 'Ministry_of_Science_and_Education_of_the_Republic_of_Azerbaijan.svg', url: '#' },
-                { name: 'Tibbi Ərazi Bölmələrini İdarəetmə Birliyi (TƏBİB)', logo: 'TƏBİB_logo_PNG.png', url: '#' },
-                { name: 'İnnovasiya və Rəqəmsal İnkişaf Agentliyi', logo: 'innovasiya-ve-reqemsal-inkisaf-agentliyi-0.png', url: '#' },
-                { name: 'Azərbaycan Respublikasının Kiçik və Orta Biznesin İnkişafı Agentliyi (KOBİA)', logo: 'kobia.svg', url: '#' },
-                { name: 'Azərbaycan Respublikası Əqli Mülkiyyət Agentliyi', logo: 'copat.svg', url: '#' },
-                { name: 'İqtisadi İslahatların Təhlili və Kommunikasiya Mərkəzi', logo: 'iitkm_logo_az.png', url: '#' },
-                { name: 'Milli Onkologiya Mərkəzi', logo: 'millOncology.jpg', url: '#' },
-                { name: 'Azərbaycan Tibb Universiteti', logo: 'Emblem_of_the_Azerbaijan_Medical_University.jpg', url: '#' },
-                { name: 'Azərbaycan Tibb Universiteti Tədris Cərrahiyyə Klinikası', logo: 'az-tibb-uni-tedris-cerrahiyye.png', url: '#' },
-                { name: 'Azərbaycan Respublikası Elm və Təhsil Nazirliyinin Yüksək Texnologiyalar Parkı (YTP)', logo: 'ytp.webp', url: '#' },
+                { name: 'Azərbaycan Respublikası Səhiyyə Nazirliyi', logo: 'Logo_of_the_Ministry_of_Healthcare_of_Azerbaijan.png', url: 'https://sehiyye.gov.az' },
+                { name: 'Azərbaycan Respublikası Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi', logo: 'Logo_of_Ministry_of_Digital_Development_and_Transportation_of_Azerbaijan.svg', url: 'https://www.mincom.gov.az' },
+                { name: 'Azərbaycan Respublikası Elm və Təhsil Nazirliyi', logo: 'Ministry_of_Science_and_Education_of_the_Republic_of_Azerbaijan.svg', url: 'https://edu.gov.az' },
+                { name: 'Tibbi Ərazi Bölmələrini İdarəetmə Birliyi (TƏBİB)', logo: 'TƏBİB_logo_PNG.png', url: 'https://tabib.gov.az' },
+                { name: 'İnnovasiya və Rəqəmsal İnkişaf Agentliyi', logo: 'innovasiya-ve-reqemsal-inkisaf-agentliyi-0.png', url: 'https://idda.az/az' },
+                { name: 'Azərbaycan Respublikasının Kiçik və Orta Biznesin İnkişafı Agentliyi (KOBİA)', logo: 'kobia.svg', url: 'https://smb.gov.az/az' },
+                { name: 'Azərbaycan Respublikası Əqli Mülkiyyət Agentliyi', logo: 'copat.svg', url: 'https://www.copat.gov.az/az' },
+                { name: 'İqtisadi İslahatların Təhlili və Kommunikasiya Mərkəzi', logo: 'iitkm_logo_az.png', url: 'https://ereforms.gov.az/az' },
+                { name: 'Milli Onkologiya Mərkəzi', logo: 'millOncology.jpg', url: 'http://mom.gov.az' },
+                { name: 'Azərbaycan Tibb Universiteti', logo: 'Emblem_of_the_Azerbaijan_Medical_University.jpg', url: 'https://amu.edu.az' },
+                { name: 'Azərbaycan Respublikası Elm və Təhsil Nazirliyinin Yüksək Texnologiyalar Parkı (YTP)', logo: 'ytp.webp', url: 'https://ytp.az' },
                 { name: 'INNOLAND Inkubasiya və Akselerasiya Mərkəzi', logo: 'innoland.svg', url: 'https://innoland.az' },
-                { name: 'Azerbaijan Artificial Intelligence Lab', logo: 'aai.svg', url: '#' },
+                { name: 'Azerbaijan Artificial Intelligence Lab', logo: 'aai.svg', url: 'https://ailab.az' },
                 { name: 'Google for Startups', logo: 'Google_for_Startups_logo.svg', url: 'https://startup.google.com' },
-                { name: 'German Research Center for Artificial Intelligence', logo: 'dfki_Logo_digital_black.png', url: '#' }
+                { name: 'German Research Center for Artificial Intelligence', logo: 'dfki_Logo_digital_black.png', url: 'https://www.dfki.de/en/web' }
               ].map((partner, index) => (
                 <a
                   key={`first-${index}`}
@@ -297,22 +296,21 @@ const SkolynWebsite = ({ onNavigate }) => {
               
               {/* Duplicate set for seamless loop */}
               {[
-                { name: 'Azərbaycan Respublikası Səhiyyə Nazirliyi', logo: 'Logo_of_the_Ministry_of_Healthcare_of_Azerbaijan.png', url: '#' },
-                { name: 'Azərbaycan Respublikası Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi', logo: 'Logo_of_Ministry_of_Digital_Development_and_Transportation_of_Azerbaijan.svg', url: '#' },
-                { name: 'Azərbaycan Respublikası Elm və Təhsil Nazirliyi', logo: 'Ministry_of_Science_and_Education_of_the_Republic_of_Azerbaijan.svg', url: '#' },
-                { name: 'Tibbi Ərazi Bölmələrini İdarəetmə Birliyi (TƏBİB)', logo: 'TƏBİB_logo_PNG.png', url: '#' },
-                { name: 'İnnovasiya və Rəqəmsal İnkişaf Agentliyi', logo: 'innovasiya-ve-reqemsal-inkisaf-agentliyi-0.png', url: '#' },
-                { name: 'Azərbaycan Respublikasının Kiçik və Orta Biznesin İnkişafı Agentliyi (KOBİA)', logo: 'kobia.svg', url: '#' },
-                { name: 'Azərbaycan Respublikası Əqli Mülkiyyət Agentliyi', logo: 'copat.svg', url: '#' },
-                { name: 'İqtisadi İslahatların Təhlili və Kommunikasiya Mərkəzi', logo: 'iitkm_logo_az.png', url: '#' },
-                { name: 'Milli Onkologiya Mərkəzi', logo: 'millOncology.jpg', url: '#' },
-                { name: 'Azərbaycan Tibb Universiteti', logo: 'Emblem_of_the_Azerbaijan_Medical_University.jpg', url: '#' },
-                { name: 'Azərbaycan Tibb Universiteti Tədris Cərrahiyyə Klinikası', logo: 'az-tibb-uni-tedris-cerrahiyye.png', url: '#' },
-                { name: 'Azərbaycan Respublikası Elm və Təhsil Nazirliyinin Yüksək Texnologiyalar Parkı (YTP)', logo: 'ytp.webp', url: '#' },
+               { name: 'Azərbaycan Respublikası Səhiyyə Nazirliyi', logo: 'Logo_of_the_Ministry_of_Healthcare_of_Azerbaijan.png', url: 'https://sehiyye.gov.az' },
+                { name: 'Azərbaycan Respublikası Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi', logo: 'Logo_of_Ministry_of_Digital_Development_and_Transportation_of_Azerbaijan.svg', url: 'https://www.mincom.gov.az' },
+                { name: 'Azərbaycan Respublikası Elm və Təhsil Nazirliyi', logo: 'Ministry_of_Science_and_Education_of_the_Republic_of_Azerbaijan.svg', url: 'https://edu.gov.az' },
+                { name: 'Tibbi Ərazi Bölmələrini İdarəetmə Birliyi (TƏBİB)', logo: 'TƏBİB_logo_PNG.png', url: 'https://tabib.gov.az' },
+                { name: 'İnnovasiya və Rəqəmsal İnkişaf Agentliyi', logo: 'innovasiya-ve-reqemsal-inkisaf-agentliyi-0.png', url: 'https://idda.az/az' },
+                { name: 'Azərbaycan Respublikasının Kiçik və Orta Biznesin İnkişafı Agentliyi (KOBİA)', logo: 'kobia.svg', url: 'https://smb.gov.az/az' },
+                { name: 'Azərbaycan Respublikası Əqli Mülkiyyət Agentliyi', logo: 'copat.svg', url: 'https://www.copat.gov.az/az' },
+                { name: 'İqtisadi İslahatların Təhlili və Kommunikasiya Mərkəzi', logo: 'iitkm_logo_az.png', url: 'https://ereforms.gov.az/az' },
+                { name: 'Milli Onkologiya Mərkəzi', logo: 'millOncology.jpg', url: 'http://mom.gov.az' },
+                { name: 'Azərbaycan Tibb Universiteti', logo: 'Emblem_of_the_Azerbaijan_Medical_University.jpg', url: 'https://amu.edu.az' },
+                { name: 'Azərbaycan Respublikası Elm və Təhsil Nazirliyinin Yüksək Texnologiyalar Parkı (YTP)', logo: 'ytp.webp', url: 'https://ytp.az' },
                 { name: 'INNOLAND Inkubasiya və Akselerasiya Mərkəzi', logo: 'innoland.svg', url: 'https://innoland.az' },
-                { name: 'Azerbaijan Artificial Intelligence Lab', logo: 'aai.svg', url: '#' },
+                { name: 'Azerbaijan Artificial Intelligence Lab', logo: 'aai.svg', url: 'https://ailab.az' },
                 { name: 'Google for Startups', logo: 'Google_for_Startups_logo.svg', url: 'https://startup.google.com' },
-                { name: 'German Research Center for Artificial Intelligence', logo: 'dfki_Logo_digital_black.png', url: '#' }
+                { name: 'German Research Center for Artificial Intelligence', logo: 'dfki_Logo_digital_black.png', url: 'https://www.dfki.de/en/web' }
               ].map((partner, index) => (
                 <a
                   key={`second-${index}`}
