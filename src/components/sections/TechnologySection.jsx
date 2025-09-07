@@ -111,13 +111,13 @@ const TechnologySection = () => {
         </div>
 
         {/* Technology Pillars */}
-        <Tabs defaultValue="architecture" className="mb-16">
-          <TabsList className="grid w-full grid-cols-4 bg-[#030f4f]/50 border border-gray-700">
+        <Tabs defaultValue="architecture" className="mb-16 ">
+          <TabsList className="grid w-full grid-cols-4 bg-[#030f4f]/50">
             {techPillars.map((pillar) => (
               <TabsTrigger 
                 key={pillar.id} 
                 value={pillar.id}
-                className="text-white data-[state=active]:bg-[#00A99D] data-[state=active]:text-white"
+                className="text-white data-[state=active]:bg-[#00A99D] data-[state=active]:text-white "
               >
                 <div className="flex flex-col items-center space-y-2">
                   {pillar.icon}
@@ -128,7 +128,7 @@ const TechnologySection = () => {
           </TabsList>
 
           {techPillars.map((pillar) => (
-            <TabsContent key={pillar.id} value={pillar.id} className="mt-8">
+            <TabsContent key={pillar.id} value={pillar.id} className="mt-12 ">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Overview */}
                 <Card className="bg-white/5 border-gray-700 text-white">

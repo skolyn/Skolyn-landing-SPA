@@ -95,7 +95,7 @@ const PlatformSection = () => {
                 }`}
                 onClick={() => setActiveFeature(feature.id)}
               >
-                <CardHeader className="pb-3">
+                <CardHeader className="p-3">
                   <div className="flex items-center space-x-3">
                     <div className={`p-2 rounded-lg ${
                       activeFeature === feature.id 
