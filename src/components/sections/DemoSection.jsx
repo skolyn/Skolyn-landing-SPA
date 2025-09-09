@@ -194,7 +194,7 @@ ${formData.firstName} ${formData.lastName}`;
                       onChange={handleInputChange}
                       required
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
-                      placeholder="John"
+                      placeholder="Ali"
                     />
                   </div>
                   <div>
@@ -206,7 +206,7 @@ ${formData.firstName} ${formData.lastName}`;
                       onChange={handleInputChange}
                       required
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
-                      placeholder="Doe"
+                      placeholder="Mammadov"
                     />
                   </div>
                 </div>
@@ -220,7 +220,7 @@ ${formData.firstName} ${formData.lastName}`;
                     onChange={handleInputChange}
                     required
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
-                    placeholder="john.doe@hospital.com"
+                    placeholder="ali.mammadov@gmail.com"
                   />
                 </div>
 
@@ -265,7 +265,7 @@ ${formData.firstName} ${formData.lastName}`;
                     value={formData.phone}
                     onChange={handleInputChange}
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
-                    placeholder="+1 (555) 123-4567"
+                    placeholder="+994 (51) 529 62 28"
                   />
                 </div>
 

@@ -244,10 +244,29 @@ const SkolynWebsite = ({ onNavigate }) => {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <ChevronDown className="h-8 w-8 text-white animate-bounce" />
-        </div>
+        {/* Scroll Indicator Down */}
+ <div
+  className="
+    absolute bottom-8 
+    left-1/2 -translate-x-1/2
+    cursor-pointer 
+    hidden md:block   // mobilde gizle, tablet ve üstünde göster
+  "
+  onClick={() => window.scrollBy({ top: 900, behavior: 'smooth' })}
+>
+  <ChevronDown className="h-8 w-8 text-white animate-bounce" />
+</div>
+
+{/* Scroll Indicator UP  */}
+<div
+  className="fixed bottom-8 right-8 cursor-pointer"
+  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+>
+  <ChevronDown className="h-8 w-8 text-[#00A99D] rotate-180 animate-bounce" />
+</div>
+
+
+
       </section>
 
       {/* Credibility Bar - Infinite Scrolling Partners */}
