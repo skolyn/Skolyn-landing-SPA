@@ -215,11 +215,11 @@ const SkolynWebsite = ({ onNavigate }) => {
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-5xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
             Clarity in <span className="text-[#00A99D] font-extrabold">Complexity</span>.
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base md:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed">
             Skolyn is the enterprise-grade Clinical Intelligence OS. We leverage proprietary 
             Explainable AI to grant clinicians superhuman accuracy and build unwavering trust 
             in every diagnosis.
@@ -228,7 +228,7 @@ const SkolynWebsite = ({ onNavigate }) => {
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Button 
               size="lg" 
-              className="bg-[#00A99D] hover:bg-[#00A99D]/90 text-lg px-8 py-6 h-auto"
+              className="bg-[#00A99D] hover:bg-[#00A99D]/90 text-sm md:text-lg px-6 py-4 h-auto"
               onClick={() => scrollToSection('demo')}
             >
               Request a Personalized Demo
@@ -236,7 +236,7 @@ const SkolynWebsite = ({ onNavigate }) => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-[#030f4f] text-lg px-8 py-6 h-auto"
+              className="border-white text-white hover:bg-white hover:text-[#030f4f] text-sm md:text-lg px-6 py-4 h-auto"
               onClick={() => scrollToSection('platform')}
             >
               Explore Our Technology <ArrowRight className="ml-2 h-5 w-5" />
@@ -272,7 +272,7 @@ const SkolynWebsite = ({ onNavigate }) => {
       {/* Credibility Bar - Infinite Scrolling Partners */}
       <section className="py-12 bg-gray-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-gray-600 mb-8 text-lg">
+          <p className="text-center text-gray-600 mb-8 text-base md:text-lg">
             A Registered National Technology Startup, Proudly Incubated at Innoland and Backed by a World-Class Ecosystem of Strategic Partners
           </p>
           

@@ -262,7 +262,7 @@ const CareersSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-[#030f4f] mb-6">
             Build the Future of Healthcare
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Join a mission-driven team of world-class engineers, researchers, and clinicians 
             working to revolutionize medical diagnostics through explainable AI.
           </p>
@@ -312,7 +312,7 @@ const CareersSection = () => {
                       <p className="text-sm text-[#00A99D]">{testimonial.role}</p>
                     </div>
                   </div>
-                  <p className="text-gray-700 italic mb-4">"{testimonial.testimonial}"</p>
+                  <p className="text-gray-700 text-sm md:text-base italic mb-4">"{testimonial.testimonial}"</p>
                   <p className="text-xs text-gray-500">Joined in {testimonial.joinedYear}</p>
                 </CardContent>
               </Card>

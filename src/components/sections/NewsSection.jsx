@@ -135,7 +135,7 @@ const NewsSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-[#030f4f] mb-6">
             Latest News & Insights
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Stay updated with the latest developments, thought leadership, and 
             company milestones from the Skolyn team.
           </p>

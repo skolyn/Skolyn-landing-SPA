@@ -104,7 +104,7 @@ const TechnologySection = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Built for <span className="text-[#00A99D]">Scale</span> & <span className="text-[#00A99D]">Trust</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Our technology stack combines cutting-edge AI research with enterprise-grade 
             infrastructure, ensuring both clinical excellence and operational reliability.
           </p>

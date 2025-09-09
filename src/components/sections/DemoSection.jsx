@@ -165,7 +165,7 @@ ${formData.firstName} ${formData.lastName}`;
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             See Skolyn in <span className="text-[#00A99D]">Action</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Experience firsthand how our Clinical Intelligence Platform can transform 
             your radiology workflow. Book a personalized demonstration with our experts.
           </p>

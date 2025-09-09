@@ -67,7 +67,7 @@ const ProblemSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-[#030f4f] mb-6">
             The Crisis in Modern Radiology
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl l text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Healthcare is facing an unprecedented challenge. The volume of medical imaging data is 
             exploding while the number of qualified radiologists remains stagnant, creating a 
             perfect storm of delays, burnout, and compromised patient care.
@@ -121,7 +121,7 @@ const ProblemSection = () => {
           <h3 className="text-2xl font-bold text-[#030f4f] mb-4">
             The Solution Must Be Intelligent, Explainable, and Trusted
           </h3>
-          <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
             Traditional approaches have failed. We need a new paradigm that combines the power of 
             AI with the transparency and trust that clinicians demand. This is why Skolyn exists.
           </p>

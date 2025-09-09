@@ -125,7 +125,7 @@ const CompanySection = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-[#030f4f] mb-6">
             Building the Future of Medical AI
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Founded by a team of AI researchers, clinicians, and healthcare executives, 
             Skolyn was born from a shared vision: to create AI that clinicians can trust 
             with their patients' lives.
@@ -137,18 +137,18 @@ const CompanySection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl font-bold text-[#030f4f] mb-6">Our Mission</h3>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-700 mb-6 leading-relaxed">
                 To revolutionize medical diagnostics through explainable AI that enhances 
                 clinical decision-making while maintaining the human touch that defines 
                 compassionate healthcare.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                 We believe that AI should augment, not replace, clinical expertise. Our 
                 platform is designed to give clinicians superhuman capabilities while 
                 preserving their autonomy and professional judgment.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid gap-4 sm:gap-6 lg:gap-8 [grid-template-columns:repeat(auto-fit,minmax(220px,1fr))]">
               {companyValues.map((value, index) => (
                 <Card key={index} className="text-center p-6">
                   <div className="flex justify-center mb-4">
@@ -181,10 +181,10 @@ const CompanySection = () => {
                       </span>
                     </div>
                     <div className="flex-1">
-                      <CardTitle className="text-xl text-[#030f4f] mb-1">
+                      <CardTitle className="text-base md:text-xl text-[#030f4f] mb-1">
                         {leader.name}
                       </CardTitle>
-                      <CardDescription className="text-[#00A99D] font-semibold mb-2">
+                      <CardDescription className="text-[#00A99D] text-sm md:text-base font-semibold mb-2">
                         {leader.role}
                       </CardDescription>
                       <p className="text-sm text-gray-600">{leader.background}</p>
@@ -195,7 +195,7 @@ const CompanySection = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-700 mb-4 leading-relaxed">
+                  <p className="text-gray-700 text-sm md:text-base mb-4 leading-relaxed">
                     {leader.bio}
                   </p>
                   
@@ -241,7 +241,7 @@ const CompanySection = () => {
                           <Badge variant="outline">{milestone.quarter}</Badge>
                         </div>
                         <h4 className="font-bold text-[#030f4f] mb-2">{milestone.title}</h4>
-                        <p className="text-gray-600">{milestone.description}</p>
+                        <p className="text-gray-600 text-sm md:text-base">{milestone.description}</p>
                       </CardContent>
                     </Card>
                   </div>
@@ -264,7 +264,7 @@ const CompanySection = () => {
             <h3 className="text-3xl font-bold mb-4">
               Our Commitment to <span className="text-[#00A99D]">Azerbaijan</span>
             </h3>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-base md:text-xl text-gray-300 max-w-3xl mx-auto">
               As a proudly Azerbaijani company, we are committed to advancing our nation's 
               position as a leader in healthcare technology and innovation.
             </p>
