@@ -193,7 +193,7 @@ ${formData.firstName} ${formData.lastName}`;
                       value={formData.firstName}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
+                      className="w-full px-3 py-2 text-sm md:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
                       placeholder="Ali"
                     />
                   </div>
@@ -205,7 +205,7 @@ ${formData.firstName} ${formData.lastName}`;
                       value={formData.lastName}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
+                      className="w-full px-3 py-2 border text-sm md:text-base border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
                       placeholder="Mammadov"
                     />
                   </div>
@@ -219,7 +219,7 @@ ${formData.firstName} ${formData.lastName}`;
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
+                    className="w-full px-3 py-2 text-sm md:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
                     placeholder="ali.mammadov@gmail.com"
                   />
                 </div>
@@ -233,7 +233,7 @@ ${formData.firstName} ${formData.lastName}`;
                       value={formData.company}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
+                      className="w-full px-3 py-2 text-sm md:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
                       placeholder="City General Hospital"
                     />
                   </div>
@@ -244,7 +244,7 @@ ${formData.firstName} ${formData.lastName}`;
                       value={formData.role}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
+                      className="w-full px-3 py-2 text-sm md:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
                     >
                       <option value="">Select your role</option>
                       <option value="radiologist">Radiologist</option>
@@ -264,7 +264,7 @@ ${formData.firstName} ${formData.lastName}`;
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
+                    className="w-full px-3 text-sm md:text-base py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
                     placeholder="+994 (51) 529 62 28"
                   />
                 </div>
@@ -276,7 +276,7 @@ ${formData.firstName} ${formData.lastName}`;
                     value={formData.useCase}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
+                    className="w-full text-sm md:text-base px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent"
                   >
                     <option value="">Select primary interest</option>
                     <option value="breast-imaging">Breast Imaging</option>
@@ -297,14 +297,14 @@ ${formData.firstName} ${formData.lastName}`;
                     value={formData.message}
                     onChange={handleInputChange}
                     rows={4}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent resize-none"
+                    className="w-full text-sm md:text-base px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00A99D] focus:border-transparent resize-none"
                     placeholder="Tell us about your current challenges, volume, or specific questions you'd like addressed during the demo..."
                   />
                 </div>
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-[#00A99D] hover:bg-[#00A99D]/90 text-lg py-3"
+                  className="w-full bg-[#00A99D] hover:bg-[#00A99D]/90 text-lg py-3 text-sm md:text-base"
                 >
                   Request Demo <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -344,45 +344,51 @@ ${formData.firstName} ${formData.lastName}`;
             <Card className="bg-white/10 border-gray-700 text-white">
               <CardHeader>
                 <CardTitle className="text-xl">Get in Touch</CardTitle>
-                <CardDescription className="text-gray-300">
+                <CardDescription className="text-gray-300 text-sm md:text-base">
                   Prefer to speak directly? Reach out to our team.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
+                  <div className="flex items-center space-x-3 text-sm md:text-base">
                     <Mail className="h-5 w-5 text-[#00A99D]" />
                     <span>{contactInfo.email}</span>
                   </div>
-                  <div className="flex items-center space-x-3">
+                  <div className="flex items-center space-x-3 text-sm md:text-base">
                     <Phone className="h-5 w-5 text-[#00A99D]" />
                     <span>{contactInfo.phone}</span>
                   </div>
-                  <div className="flex items-start space-x-3">
+                  <div className="flex items-start space-x-3 text-sm md:text-base">
                     <MapPin className="h-5 w-5 text-[#00A99D] mt-1" />
                     <span>{contactInfo.address}</span>
                   </div>
-                  <div className="flex items-center space-x-3">
+                  <div className="flex items-center space-x-3 text-sm md:text-base">
                     <Clock className="h-5 w-5 text-[#00A99D]" />
                     <span className="text-sm">{contactInfo.businessHours}</span>
                   </div>
                 </div>
 
-                <div className="mt-6 pt-6 border-t border-gray-700">
-                  <p className="text-sm text-gray-300 mb-4">Follow us:</p>
-                  <div className="flex space-x-4">
-                    {socialLinks.map((social, index) => (
-                      <Button
-                        key={index}
-                        variant="ghost"
-                        size="sm"
-                        className="text-gray-300 hover:text-[#00A99D] hover:bg-white/10"
-                      >
-                        {social.icon}
-                      </Button>
-                    ))}
-                  </div>
-                </div>
+          <div className="mt-6 pt-6 border-t border-gray-700">
+  <div className="flex items-center flex-wrap gap-3">
+    <p className="text-sm text-gray-300">Follow us:</p>
+
+    <div className="flex items-center gap-2">
+      {socialLinks.map((social, index) => (
+        <Button
+          key={index}
+          variant="ghost"
+          size="icon"
+          className="h-8 w-8 text-gray-300 hover:text-[#00A99D] hover:bg-white/10"
+          aria-label={social.label ?? social.name}
+          title={social.label ?? social.name}
+        >
+          {social.icon}
+        </Button>
+      ))}
+    </div>
+  </div>
+</div>
+
               </CardContent>
             </Card>
 

@@ -281,20 +281,25 @@ const NewsSection = () => {
             Skolyn in the Media
           </h3>
           
-          <p className="text-gray-600 mb-8">
+          <p className="text-sm md:text-base text-gray-600 mb-8">
             Leading healthcare publications covering our innovation and impact
           </p>
           
-          <div className="flex justify-center items-center space-x-12 opacity-60 hover:opacity-100 transition-opacity duration-300">
-            {mediaLogos.map((media, index) => (
-              <div key={index} className="flex items-center space-x-2 grayscale hover:grayscale-0 transition-all duration-300">
-                <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center">
-                  <Newspaper className="h-6 w-6 text-gray-500" />
-                </div>
-                <span className="font-medium text-gray-700">{media.name}</span>
-              </div>
-            ))}
-          </div>
+    <div className="
+  flex flex-wrap justify-center items-center
+  gap-4 sm:gap-x-8 sm:gap-y-6
+  opacity-60 hover:opacity-100 transition-opacity duration-300
+">
+  {mediaLogos.map((media, index) => (
+    <div key={index} className="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-300">
+      <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-200 rounded-lg flex items-center justify-center">
+        <Newspaper className="h-5 w-5 sm:h-6 sm:w-6 text-gray-500" />
+      </div>
+      <span className="text-sm sm:text-base font-medium text-gray-700">{media.name}</span>
+    </div>
+  ))}
+</div>
+
         </div>
       </div>
     </section>

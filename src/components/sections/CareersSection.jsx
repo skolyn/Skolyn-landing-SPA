@@ -373,7 +373,7 @@ const CareersSection = () => {
                 </CardHeader>
                 
                 <CardContent>
-                  <p className="text-gray-700 mb-6 leading-relaxed">
+                  <p className="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
                     {position.description}
                   </p>
                   
